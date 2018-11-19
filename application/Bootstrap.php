@@ -9,6 +9,7 @@
  */
 class Bootstrap extends Yaf_Bootstrap_Abstract {
 
+
     public function _initConfig() {
 		//把配置保存起来
 		$arrConfig = Yaf_Application::app()->getConfig();
@@ -27,5 +28,10 @@ class Bootstrap extends Yaf_Bootstrap_Abstract {
 	
 	public function _initView(Yaf_Dispatcher $dispatcher) {
 		//在这里注册自己的view控制器，例如smarty,firekylin
-	}
+    }
+
+    //默认加载共用函数
+    public function _initCommonFunctions(){  
+        Yaf_Loader::import(Yaf_Application::app()->getConfig()->application->directory . '/common/functions.php');  
+    }  
 }
