@@ -5,7 +5,7 @@
  * @desc 默认控制器
  * @see http://www.php.net/manual/en/class.yaf-controller-abstract.php
  */
-use home\Test;
+use home\Test;//使用命名空间
 class IndexController extends Yaf_Controller_Abstract {
 
 	/** 
