@@ -49,4 +49,10 @@ class IndexController extends Yaf_Controller_Abstract {
         echo 333;   
         exit;
     }
+
+
+    public function myOrderAction(){
+        echo '这事一个测试的方法';
+        echo 333;exit;
+    }
 }
