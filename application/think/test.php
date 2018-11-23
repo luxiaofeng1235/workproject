@@ -5,7 +5,11 @@ function hello1($name) {
     return "leiyu xxx $name!";
 }
 
+function myProduct($arr){
+    return 'user：'.$arr;
+}
+
 $server = new Server();
-$server->addFunction('hello1');
+$server->addFunction('myProduct');
 $server->start();
 ?>
